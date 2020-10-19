@@ -52,7 +52,7 @@ class App extends Component {
       charComp=(
         <div>
           {this.state.inputStringArr.map((e,index)=>
-            <CharComponent char={e.char} key={e.id} click={this.deleteCharHandler(index)} ></CharComponent>
+            <CharComponent char={e.char} key={e.id} click={()=>this.deleteCharHandler(index)} ></CharComponent>
           )}
         </div>
       )
